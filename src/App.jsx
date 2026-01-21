@@ -345,6 +345,14 @@ function MilestoneTimeline({ items }) {
                           </div>
                           <div className="text-sm text-zinc-700">{it.org}</div>
                           <div className="mt-1 text-xs text-zinc-500">{it.range}</div>
+                          
+                          {it.bullets && it.bullets.length > 0 && (
+                            <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-zinc-600">
+                              {it.bullets.map((point, idx) => (
+                                <li key={idx}>{point}</li>
+                              ))}
+                            </ul>
+                          )}
 
                           {it.coursework && (
                             <p className="mt-3 text-xs text-zinc-600">
@@ -718,6 +726,10 @@ export default function App() {
         end: parseMonthYear("Sep 2019"),
         range: "Aug 2018 – Sep 2019",
         icon: "🏆",
+        bullets: [
+          "Led a three-day intercollegiate technical event (VISHWOTSAV) at VIT Pune in collaboration with the Electronics & Telecommunication Engineering department and IEEE Pune Section.",
+          "Organized and delivered technical workshops for first-year undergraduate students, inviting industry experts to bridge academic learning with real-world exposure.",
+        ],
       },
       {
         side: "left",
@@ -728,6 +740,13 @@ export default function App() {
         end: parseMonthYear("Jul 2023"),
         range: "Dec 2020 – Jul 2023",
         icon: "💻",
+        bullets: [
+          "Built backend services in Python/Flask and integrated Google Cloud AI APIs for multilingual speech-to-text, translation, and text-to-speech.",
+          "Designed scalable Cloud SQL schema and data models to support cross-region workflows.",
+          "Reduced manual localization effort by 60% using AI-driven voice synthesis and dubbing automation.",
+          "Implemented CI/CD with Docker, Kubernetes, Cloud Build, and Cloud Run to accelerate delivery.",
+          "Improved platform stability by 40% using Cloud Logging + monitoring pipelines.",
+        ],
       },
       {
         side: "left",
@@ -738,6 +757,10 @@ export default function App() {
         end: parseMonthYear("Jul 2020"),
         range: "Jan 2020 – Jul 2020",
         icon: "💻",
+        bullets: [
+          "Developed OCR preprocessing algorithms in C++ and Python, improving prediction accuracy by 12%.",
+          "Modularized components using OOP patterns to improve maintainability.",
+        ],
       },
       {
         side: "left",
@@ -748,6 +771,12 @@ export default function App() {
         end: parseMonthYear("May 2025"),
         range: "Oct 2024 – May 2025",
         icon: "💻",
+        bullets: [
+          "Designed and implemented backend APIs with Python/Flask, enabling scalable forecasting services.",
+          "Applied role-based access control for secure data access and compliance.",
+          "Used telemetry and metrics to optimize performance and reduce latency.",
+          "Partnered with product managers and engineers to deliver reliable SaaS-style features.",
+        ],
       },
       {
         side: "left",
@@ -758,6 +787,14 @@ export default function App() {
         end: null, // Present
         range: "Sep 2025 – Present",
         icon: "💻",
+        bullets: [
+          "Worked with a containerized architecture on Azure Container Apps, supporting 10+ backend and worker services.",
+          "Developed a role-based admin dashboard to monitor 6K+ users, transaction flows, revenue metrics, and connected IoT devices.",
+          "Integrated phone + email verification using Twilio and SendGrid, reducing fraudulent or invalid signups by ~30%.",
+          "Built Grafana dashboards for real-time monitoring of container health, performance metrics, and resource utilization.",
+          "Integrated Enode webhooks to ingest and process real-time IoT device events, handling thousands of device updates/day in an event-driven pipeline.",
+          "Improved observability using logs, metrics, and alerts; supported frequent releases with minimal downtime.",
+        ],
       },
     ],
     []
@@ -1023,7 +1060,7 @@ export default function App() {
           id="beyond-work"
           title="Life Beyond Work"
           subtitle="What I enjoy outside of engineering and problem-solving."
-          className="py-10 md:py-12"
+          className="py-8"
         >
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 items-center">
   
