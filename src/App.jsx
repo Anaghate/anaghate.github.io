@@ -428,16 +428,26 @@ export default function App() {
   const featuredProjects = useMemo(
   () => [
     {
-      name: "Hotel Reviews Analysis",
-      oneLiner:
-        "Flask + MongoDB analytics platform for unstructured hotel reviews with trend and loyalty insights.",
-      stack: ["Flask", "MongoDB", "JavaScript", "REST APIs"],
-      bullets: [
-        "Built analytics workflows using MongoDB aggregation pipelines for rating trends and loyalty detection.",
-        "Developed backend endpoints to serve review insights and customer segmentation.",
-        "Created an interactive UI to explore trends from unstructured review text.",
+      "name": "AI Assistant Platform",
+      "oneLiner":
+        "Spring Boot–based AI system enabling conversational chat and vision-based car damage analysis using Anthropic Claude API.",
+      "stack": [
+        "Java",
+        "Spring Boot",
+        "Anthropic Claude API",
+        "OpenCV",
+        "imgscalr",
+        "REST APIs",
+        "Maven",
+        "GitHub"
       ],
-      links: { github: "", live: "" },
+      "bullets": [
+        "Developed a Spring Boot REST API to handle user queries and integrate with Anthropic Claude for AI-driven responses.",
+        "Implemented multimodal capability by enabling image-based car damage analysis using vision models.",
+        "Engineered an image preprocessing pipeline using OpenCV and imgscalr to resize and crop images, reducing token consumption by ~80%.",
+        "Applied prompt engineering with structured JSON outputs and token limits to ensure efficient, predictable, and cost-controlled responses."
+      ],
+      links: { github: "https://github.com/Anaghate/AI_query_assistant", live: "" },
     },
     {
       name: "Image Caption Generator",
@@ -456,6 +466,37 @@ export default function App() {
         "Trained an LSTM sequence model to generate grammatically coherent captions.",
         "Built a custom dataset pipeline: cleaned captions, created vocabulary, aligned image-caption pairs.",
         "Optimized training with sequence padding, batching, and generator-based input pipelines.",
+      ],
+      links: { github: "https://github.com/Anaghate/Image_caption_generator", live: "" },
+    },
+    {
+      "name": "Splitwise Spending Analysis Agent",
+      "oneLiner": "AI-powered personal finance agent that analyzes shared expenses and generates actionable spending insights using LLMs.",
+      "stack": [
+        "Python",
+        "Anthropic Claude API",
+        "REST APIs",
+        "JSON Schema",
+        "Pandas",
+        "GitHub"
+      ],
+      "bullets": [
+        "Integrated Splitwise data with Claude API to analyze shared expenses and extract meaningful financial insights.",
+        "Engineered prompts with structured JSON schema outputs to generate consistent category-wise spending breakdowns.",
+        "Developed month-over-month analysis logic to identify spending patterns and provide personalized optimization recommendations.",
+        "Built a data processing pipeline to clean, aggregate, and transform expense data for accurate LLM-driven analysis."
+      ],
+      links: { github: "", live: "" },
+    },
+    {
+      name: "Hotel Reviews Analysis",
+      oneLiner:
+        "Flask + MongoDB analytics platform for unstructured hotel reviews with trend and loyalty insights.",
+      stack: ["Flask", "MongoDB", "JavaScript", "REST APIs"],
+      bullets: [
+        "Built analytics workflows using MongoDB aggregation pipelines for rating trends and loyalty detection.",
+        "Developed backend endpoints to serve review insights and customer segmentation.",
+        "Created an interactive UI to explore trends from unstructured review text.",
       ],
       links: { github: "", live: "" },
     },
