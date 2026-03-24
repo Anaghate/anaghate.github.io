@@ -486,7 +486,7 @@ export default function App() {
         "Developed month-over-month analysis logic to identify spending patterns and provide personalized optimization recommendations.",
         "Built a data processing pipeline to clean, aggregate, and transform expense data for accurate LLM-driven analysis."
       ],
-      links: { github: "", live: "" },
+      links: { github: "https://github.com/Anaghate/Expense_Analyzer", live: "" },
     },
     {
       name: "Hotel Reviews Analysis",
