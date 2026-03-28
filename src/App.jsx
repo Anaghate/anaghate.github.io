@@ -498,7 +498,7 @@ export default function App() {
         "Developed backend endpoints to serve review insights and customer segmentation.",
         "Created an interactive UI to explore trends from unstructured review text.",
       ],
-      links: { github: "", live: "" },
+      links: { github: "https://github.com/Anaghate/Hotel_Review_Analysis", live: "https://hotel-review-analysis.onrender.com/" },
     },
     {
       name: "Bike Navigator (IoT)",
