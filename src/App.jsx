@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import profileImg from "./profile.jpg";
+import profileImg from "./headshot3.png";
 import life1 from "./1.JPG";
 import life2 from "./2.JPG";
 import life3 from "./3.JPG";
