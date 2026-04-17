@@ -574,12 +574,12 @@ export default function App() {
           "Integrated ML-driven student verification and eligibility scoring pipelines for real-time multi-factor validation.",
           "Designed AI agent workflows using MCP (Model Context Protocol) to automate backend processes.",
           "Deployed containerized services using Docker and Kubernetes with CI/CD pipelines (GitHub Actions, Jenkins) enabling zero-downtime releases."
-        ]
-      }
+        ],
+      },
       {
         company: "Meltek Inc., USA",
         title: "Software Developer",
-        dates: "Sep 2025 – Present",
+        dates: "Sep 2025 – Dec 2025",
         bullets: [
           "Worked with a containerized architecture on Azure Container Apps, supporting 10+ backend and worker services.",
           "Developed a role-based admin dashboard to monitor 6K+ users, transaction flows, revenue metrics, and connected IoT devices.",
