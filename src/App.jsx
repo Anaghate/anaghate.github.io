@@ -838,8 +838,8 @@ export default function App() {
         title: "Software Developer",
         org: "Meltek Inc., USA",
         start: parseMonthYear("Sep 2025"),
-        end: null, // Present
-        range: "Sep 2025 – Present",
+        end: parseMonthYear("Dec 2025"),
+        range: "Sep 2025 – Dec 2025",
         icon: "💻",
         bullets: [
           "Worked with a containerized architecture on Azure Container Apps, supporting 10+ backend and worker services.",
@@ -848,6 +848,24 @@ export default function App() {
           "Built Grafana dashboards for real-time monitoring of container health, performance metrics, and resource utilization.",
           "Integrated Enode webhooks to ingest and process real-time IoT device events, handling thousands of device updates/day in an event-driven pipeline.",
           "Improved observability using logs, metrics, and alerts; supported frequent releases with minimal downtime.",
+        ],
+      },
+      {
+        side: "left",
+        kind: "Experience",
+        title: "Backend Engineer – Python",
+        org: "Binghamton University, USA",
+        start: parseMonthYear("Jan 2026"),
+        end: null, // present
+        range: "Jan 2026 – Present",
+        icon: "💻",
+        bullets: [
+          "Built and scaled FastAPI-based microservices handling high-volume API traffic, improving system reliability and performance.",
+          "Reduced API latency by ~35% using Redis caching, asynchronous processing, and optimized database queries.",
+          "Increased system throughput by ~40% by implementing Kafka-based event-driven processing pipelines.",
+          "Integrated ML-driven student verification and eligibility scoring pipelines for real-time multi-factor validation.",
+          "Designed AI agent workflows using MCP (Model Context Protocol) to automate backend processes.",
+          "Deployed containerized services using Docker and Kubernetes with CI/CD pipelines (GitHub Actions, Jenkins) enabling zero-downtime releases."
         ],
       },
     ],
