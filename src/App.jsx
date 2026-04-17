@@ -564,6 +564,19 @@ export default function App() {
   const experience = useMemo(
     () => [
       {
+        company: "Binghamton University, USA",
+        title: "Backend Engineer – Python",
+        dates: "Jan 2026 – Present",
+        bullets: [
+          "Built and scaled FastAPI-based microservices handling high-volume API traffic, improving system reliability and performance.",
+          "Reduced API latency by ~35% using Redis caching, asynchronous processing, and optimized database queries.",
+          "Increased system throughput by ~40% by implementing Kafka-based event-driven processing pipelines.",
+          "Integrated ML-driven student verification and eligibility scoring pipelines for real-time multi-factor validation.",
+          "Designed AI agent workflows using MCP (Model Context Protocol) to automate backend processes.",
+          "Deployed containerized services using Docker and Kubernetes with CI/CD pipelines (GitHub Actions, Jenkins) enabling zero-downtime releases."
+        ]
+      }
+      {
         company: "Meltek Inc., USA",
         title: "Software Developer",
         dates: "Sep 2025 – Present",
